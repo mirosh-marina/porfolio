@@ -64,12 +64,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price-list">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -93,17 +93,21 @@
             <h1 class="title title_fz48 promo__title">Я web-разработчик
                 из Грузии</h1>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link btn">Портфолио</a>
-                    <a href="#" class="promo__link">Про меня</a>
+                    <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                    <a href="#about" class="promo__link">Про меня</a>
                 </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
          <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                <img src="img/bg_2.png" alt="photo">
+                <img srcset="img/bg_2_min.png 300w,
+                            img/bg_2.png 400px"  
+                    sizes="(max-width: 576px) 280px,
+                        (min-width: 577px) 400px" 
+                src="img/bg_2.png" alt="photo">
                 </div>
                 <div class="about__descr">
                 <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -113,7 +117,7 @@
                     Я фронтенд-разработчик. Мне 32. Сейчас живу с семьей в Грузии. В сфере дизайна я работаю уже 10 лет, поэтому точно знаю как сделать правильный веб-дизайн, который облегчает жизнь людей. Работая со мной вы получаете полностью готовый проект. Создам сайт, который будет одновременно полностью функциональным и визуально привлекательным, как для вас, так и для вашей целевой аудитории.
                 </p>
                 </div>
-                <div class="about__skills">
+                <div class="about__skills" id="skills">
             <div class="about__skills-item">
                 <div class="about__skills-circle">
                     <img src="icons/about_me/web_development.svg" alt="web-dev">
@@ -154,10 +158,10 @@
          </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
-            <h2 class="title title_fz16 resume__title">Опыт</h2>
-            <div class="title title_fz36 resume__subtitle">Чем я буду полезна</div>
+            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
             <div class="divider"></div>
 
             <div class="resume__wrapper">
@@ -234,8 +238,8 @@
 
     <section class="skills">
         <div class="container">
-    <h2 class="title title_fz16 skills__title">Навыки</h2>
-    <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
+    <h2 class="title title_fz16 title__section-title">Навыки</h2>
+    <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
     <div class="divider"></div>
 
     <div class="skills__items">
@@ -313,47 +317,164 @@
                     <div class="title title_fz14 skills__rating-title">Создание сайтов</div>
                     <div class="skills__rating-counter">100%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 100%"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="skills__rating-item">
                     <div class="title title_fz14 skills__rating-title">Создание приложений</div>
                     <div class="skills__rating-counter">85%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 85%"></span>
+                        <span></span>
                 </div>
             </div>
                 <div class="skills__rating-item">
                     <div class="title title_fz14 skills__rating-title">Работа с данными</div>
                     <div class="skills__rating-counter">99%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 99%"></span>
+                        <span></span>
                 </div>
             </div>
                 <div class="skills__rating-item">
                     <div class="title title_fz14 skills__rating-title">Креативность</div>
                     <div class="skills__rating-counter">75%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 75%"></span>
+                        <span></span>
                 </div>
             </div>
                 <div class="skills__rating-item">
                     <div class="title title_fz14 skills__rating-title">Создание дизайна</div>
                     <div class="skills__rating-counter">90%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 90%"></span>
+                        <span></span>
                 </div>
             </div>
                 <div class="skills__rating-item">
                     <div class="title title_fz14 skills__rating-title">Soft skills</div>
                     <div class="skills__rating-counter">95%</div>
                     <div class="skills__rating-line">
-                        <span style="width: 95%"></span>
+                        <span></span>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- 
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+        <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+        <div class="divider"></div>
+    
+
+    <div class="portfolio__wrapper">
+        <a href="/uber" class="portfolio__item">
+            <img src="img/works/uber.jpg" alt="uber">
+        </a>
+        <a href="/puls" class="portfolio__item">
+            <img src="img/works/pulse.jpg" alt="pulse">
+        </a>
+        <a href="#" class="portfolio__item">
+            <img src="img/works/bread.jpg" alt="bread">
+        </a>
+        <a href="#" class="portfolio__item vertical">
+            <img src="img/works/plans.jpg" alt="plans">
+        </a>
+        <a href="/wordpress" class="portfolio__item">
+            <img src="img/works/ipad.jpg" alt="ipad">
+        </a>
+        <a href="#" class="portfolio__item horizontal">
+            <img src="img/works/mac.jpg" alt="mac">
+        </a>
+    </div>
+    </div>
+</section> -->
+<!-- 
+<section class="price-list" id="price-list">
+    <div class="container">
+    <div class="title title_fz16 title__section-title">Прайс-лист</div>
+    <div class="divider"></div>
+    <div class="price-list__wrapper">
+    <div class="price-list__item">
+<div class="price-list__type">Landing-page</div>
+<div class="price-list__counter">от 8000 руб.</div>
+<div class="price-list__descr">Одностраничный сайт для презентации услуг и товаров</div>
+</div>
+
+<div class="price-list__item">
+    <div class="price-list__type">Корпоративный сайт</div>
+    <div class="price-list__counter">от 20000 руб.</div>
+    <div class="price-list__descr">Сайт для вашего бизнеса или компании</div>
+    </div>
+
+    <div class="price-list__item">
+        <div class="price-list__type">Дизайн</div>
+        <div class="price-list__counter">Индивидуально</div>
+        <div class="price-list__descr">Создам дизайн для вашего сайта/приложения</div>
+        </div>
+
+        <div class="price-list__item">
+            <div class="price-list__type">Интернет-магазин</div>
+            <div class="price-list__counter">от 30000 руб.</div>
+            <div class="price-list__descr">Инструмент для ваших продаж в сети</div>
+            </div>
+        </div>
+        </div>
+</section> -->
+<!-- 
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__photo">
+                <img src="img/bg_2.png" alt="foto">
+            </div>
+            <div class="contacts__descr">
+                <h2 class="title title_fz16 contacts__title">Контакты</h2>
+                <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+                <div class="divider"></div>
+
+                <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+                <div class="contacts__social">
+                        <a href="https://wa.me/995597024123?text=напишите мне" class="contacts__link">
+                            <img src="icons/social/whatsapp2.png" alt="Whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/marish_mirosh1990/" class="contacts__link">
+                        <img src="icons/social/instagram2.png" alt="instagram">
+                    </a>
+                    <a href="https://github.com/mirosh-marina" class="contacts__link">
+                        <img src="icons/social/github2.png" alt="github">
+                    </a>
+                </div>
+
+                <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+            
+
+            <form action="#" class="contacts__form">
+                <div class="contacts__input">
+                    <input required name="name" id="name" type="text">
+                    <label for="name">Ваше имя</label>
+                </div>
+
+                <div class="contacts__input">
+                <input required name="email" id="email" type="email">
+                <label for="email">Ваша почта</label>
+            </div>
+
+                <div class="contacts__textarea">
+                   <textarea name="text" id="text"></textarea>
+                   <label for="text">Ваше сообщение</label>
+                </div>
+            <div class="contacts__triggers">
+            <button class="contacts__btn btn">Отправить сообщение</button>
+            <div class="contacts__policy">
+                <input required type="checkbox">
+                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+            </div>
+            </div>
+            </form>
+            </div>
+        </div>
+    </div>
+ </section> --> -->
     <script src="js/script.js"></script>
-</body>
-</html>
+ </body>
+</html> 
