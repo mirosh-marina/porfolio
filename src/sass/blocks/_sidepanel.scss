@@ -1,0 +1,41 @@
+.sidepanel {
+    position: fixed;
+    top: 145px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color:#000000;
+    }
+    &__link {
+        transform: rotate(-90deg);
+       
+        img {
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
+            &:hover {
+                border-radius: 10px;
+                background-image: linear-gradient(to top, #FF8F40 0%, #34D0BA 100%);
+                filter: invert(0);
+            }
+        }
+} 
+    
+    &__text {
+        height: 150px;
+        width: 25px;
+        color: #000000;
+        span {
+            transform: rotate(-90deg) translate(-30%, -260%);
+            display: block;
+            width: 150px;
+        }
+    }
+}
